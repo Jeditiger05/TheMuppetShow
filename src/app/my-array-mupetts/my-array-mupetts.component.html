@@ -1,0 +1,14 @@
+<h2>Come on Muppets lets gather differently!</h2>
+<h5>This version creates a behaviour object array of muppets, so as we get data we can push it onto the array which is being observed in the component by the muppetArray property, when a change is detected the ui updates! John is not fucking around, this is cool shit boyz</h5>
+
+<div *ngFor="let muppet of muppetArray" class="cage1" [style.background]="muppet.color">
+    <div *ngIf="muppet">
+        <p>Name: {{muppet.name}}</p>
+        <p>Color: {{muppet.color}}</p>
+        <p>Strings Attached: {{muppet.numberOfStrings}}</p>
+    </div>
+</div>
+
+<br>
+<button class="myBtn" [routerLink]="['']">Go NoWhere</button>
+<button class="myBtn" (click)="getMuppet()">Get That Fucker</button>

@@ -4,13 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MyMupettsComponent } from './my-mupetts/my-mupetts.component';
-import { MyPetsComponent } from './my-pets/my-pets.component';
+import { MyArrayMupettsComponent } from './my-array-mupetts/my-array-mupetts.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyMupettsComponent,
-    MyPetsComponent
+    MyArrayMupettsComponent
   ],
   imports: [
     BrowserModule,

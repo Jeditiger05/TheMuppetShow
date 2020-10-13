@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MyMupettsComponent } from './my-mupetts/my-mupetts.component';
-import { MyPetsComponent } from './my-pets/my-pets.component';
+import { MyArrayMupettsComponent } from './my-array-mupetts/my-array-mupetts.component';
 
 const routes: Routes = [
   {path: 'my-muppetts', component: MyMupettsComponent},
-  {path: 'my-pets', component: MyPetsComponent}
+  {path: 'my-muppett-array', component: MyArrayMupettsComponent}
 ];
 
 @NgModule({

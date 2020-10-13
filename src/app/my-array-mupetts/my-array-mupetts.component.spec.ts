@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MyPetsComponent } from './my-pets.component';
+import { MyArrayMupettsComponent } from './my-array-mupetts.component';
 
-describe('MyPetsComponent', () => {
-  let component: MyPetsComponent;
-  let fixture: ComponentFixture<MyPetsComponent>;
+describe('MyMuppetsArrayComponent', () => {
+  let component: MyArrayMupettsComponent;
+  let fixture: ComponentFixture<MyArrayMupettsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MyPetsComponent ]
+      declarations: [ MyArrayMupettsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MyPetsComponent);
+    fixture = TestBed.createComponent(MyArrayMupettsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

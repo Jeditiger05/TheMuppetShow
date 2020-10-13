@@ -1,6 +1,8 @@
 <h2>Come on Muppets lets gather!</h2>
 
 <h4>The Muppet that never arrives!</h4>
+<h5>Will only arrive after a refresh! This is due to the fact that there is nothing telling this muppet to update its data, as such you will only see the changes after you navigate away and back again! (full refresh will lose all data as the state refreshes completely)</h5>
+
 <div class="cage1">
     <div *ngIf="this.wontShowMuppet">
         <p>Name: {{this.wontShowMuppet.name}}</p>
@@ -10,6 +12,8 @@
 </div>
 
 <h4>Lazy Muppet, still arives but maybe late!</h4>
+<h5>Will automatically be updated when the data becomes available, as the lazy muppet object is subscribed to data changes on the the behaviour subject</h5>
+
 <div class="cage2">
     <div *ngIf="this.lazyMuppet">
         <p>Name: {{this.lazyMuppet.name}}</p>
@@ -18,6 +22,6 @@
     </div>
 </div>
 <br>
-<button class="myBtn" [routerLink]="['']">Go NoWhere</button>
 
+<button class="myBtn" [routerLink]="['']">Go NoWhere</button>
 <button class="myBtn" (click)="getMuppet()">Get That Fucker</button>
