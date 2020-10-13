@@ -1,0 +1,23 @@
+<h2>Come on Muppets lets gather!</h2>
+
+<h4>The Muppet that never arrives!</h4>
+<div class="cage1">
+    <div *ngIf="this.wontShowMuppet">
+        <p>Name: {{this.wontShowMuppet.name}}</p>
+        <p>Color: {{this.wontShowMuppet.color}}</p>
+        <p>Strings Attached: {{this.wontShowMuppet.numberOfStrings}}</p>
+    </div>
+</div>
+
+<h4>Lazy Muppet, still arives but maybe late!</h4>
+<div class="cage2">
+    <div *ngIf="this.lazyMuppet">
+        <p>Name: {{this.lazyMuppet.name}}</p>
+        <p>Color: {{this.lazyMuppet.color}}</p>
+        <p>Strings Attached: {{this.lazyMuppet.numberOfStrings}}</p>
+    </div>
+</div>
+<br>
+<button class="myBtn" [routerLink]="['']">Go NoWhere</button>
+
+<button class="myBtn" (click)="getMuppet()">Get That Fucker</button>

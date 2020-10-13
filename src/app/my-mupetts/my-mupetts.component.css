@@ -1,0 +1,18 @@
+.cage1{
+    height: 100px;
+    width: 300px;
+    background: rgb(252, 208, 216);
+}
+
+.cage2{
+    height: 100px;
+    width: 300px;
+    background: rgb(206, 248, 224);
+}
+
+.myBtn{
+    margin: 5px;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+}
