@@ -16,17 +16,18 @@ export class MyMupettsComponent implements OnInit {
   lazyMuppet: Muppet;
 
   constructor(private router: Router, private dataService: DataService) {
-  }
-  
-  ngOnInit(): void {
-  }
-  
-  getMuppet() {
     //get no show
     this.wontShowMuppet = this.dataService.wontShowMuppet;
     //get lazy
     this.dataService.lazyMuppet.subscribe(data => {
       this.lazyMuppet = data;
     })
+  }
+  
+  ngOnInit(): void {
+  }
+  
+  getMuppet() {
+    this.dataService.getMyMuppets();
   }
 }

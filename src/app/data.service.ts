@@ -12,6 +12,9 @@ export class DataService {
 
   constructor() {
     this.lazyMuppet = new BehaviorSubject(null);
+  }
+  
+  getMyMuppets(){
     //Use setTimeout to Emulate the time it might take to return Data from an API
     setTimeout(() => {
       //Set No Show
@@ -27,5 +30,7 @@ export class DataService {
         numberOfStrings: 5
       })
     }, 5000);
+    
   }
+
 }
