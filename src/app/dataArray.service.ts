@@ -19,18 +19,18 @@ export class DataArrayService {
 
   myMuppets = {
     grumpy: {
-      name: "Grumpy",
-      color: "Red",
+      name: "Arber",
+      color: "#fcd0d8",
       numberOfStrings: 20
     },
     lazy: {
-      name: "Hanckock",
-      color: "Green",
+      name: "Masimo",
+      color: "#cef8e0",
       numberOfStrings: 5
     },
     other: {
-      name: "Lord Rustworth",
-      color: "Blue",
+      name: "Yeff Yeggs",
+      color: "#9dc2f1",
       numberOfStrings: 300
     } 
   }
